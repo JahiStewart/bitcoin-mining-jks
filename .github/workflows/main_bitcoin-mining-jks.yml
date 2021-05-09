@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'bitcoin-mining-jks'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0f38dc6048834ebdbd629b28651d8bb7 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_14fec2abbf994f938e103fcbf9976eb8 }}
         package: .
