@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html>
+<style>
+    * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: #aedbff8f;
+  width: 30%;
+  height: 900px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: 2px solid #aedbff8f;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(118, 130, 145);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 2px solid #aedbff8f;
+  width: 70%;
+  border-left: none;
+  height: 900px;
+}
+
+.backgroudimage_page1 {
+ background-image: url("water.jpg");
+ background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 900px;
+}
+
+.backgroudimage_page2 {
+ background-image: url("city.jpg");
+ background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: top right;
+    width: auto;
+    height: 800px;
+}
+
+.backgroudimage_page3 {
+ background-image: url("lake.jpg");
+ background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 900px;
+}
+p.ex1 {
+  margin-right: 400px;
+  margin-bottom: 20px;
+}
+</style>
+
+<div class="backround">
+</div>
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <title>cryptojacking</title>
 </head>
+
 <body>
+    <div>
+ <h2>Crypto-jacking</h2>
+</div>
+ <p>Click on the buttons inside the tabed menu:</p>
 
-<h1>Phase 3</h1>
-<p>My first paragraph.</p>
+ <div class="tab">
+   <button class="tablinks" onclick="openInfo(event, 'Page1')" id="defaultOpen">Bitcoin</button>
+   <button class="tablinks" onclick="openInfo(event, 'Page2')">Crypto-jacking</button>
+   <button class="tablinks" onclick="openInfo(event, 'Page3')">References</button>
+ </div>
+ 
+ <div id="Page1" class="tabcontent">
+    <div class="backgroudimage_page1">
+   <h2>Bitcoin</h2>
+   <h3>What is Bitcoin?</h3>
+   <p class="ex1">
+    &emsp;Bitcoin is like normal money or fiat money, it’s value comes because you trust it has value. Bitcoin is a type of cryptocurrency(digital-currency)  that keeps records of all their user’s transaction. This record is a file called a ledger. To create a bitcoin, there is a password that needs to broken in the bitcoin network. A person can guess, but odds that you get it right are astronomical, so computers are used instead because they can make more guess attempts faster. 
+    Bitcoin mining is not really mining but more gambling. It is called mining because the process is power taxing. To make many attempts at a quick it takes a lot of computational power or watts used to guess the password. The password changes every time someone guess it. To prevent inflation, the password becomes harder to guess the more people join bitcoin
+    </p>
+   <p class="ex1">
+   &emsp;No one owns or can take over the bitcoin network, which everyone has the advantage of getting bitcoin because no one can rig the system. That also means there is no one to regulate the network, which means you are legally unprotected if anything goes wrong, no refunds, and bitcoin cannot be recovered if stolen.
+    The idea of bitcoin is to stop government meddling in the economy and reduce inflation and deflation with a decentralized system. Bitcoin is like normal money or fiat money, it’s value comes because you trust it has value. When you make a transaction everyone then records that transaction on their ledgers.  
+    </p>
+    <h3>Should I get into Bitcoin?</h3>
+    <p class="ex1">
+        Bitcoin can yield high returns but it mostly depends on luck. Getting into bitcoin is like investing, 
+        you should not bet everything on bitcoin the value fluctuates a
+         lot and currently there is no help from the law for disputing crypto transactions.
+    </p>
+    <p class="ex1">
+        99Bitcoins explains in their video “What is Bitcoin? (In Plain English)” that main 
+        challenges of bitcoin are mining difficulty and electricity cost. Bitcoin gets harder to mine as more miners join the network. 
+        Electricity cost from the CPU might overcome the yield gotten from the one bitcoin. That is why there are special CPUs that are made 
+        for mining or some use cloud mining.
+It’s best to use a bitcoin calculator to see if the conditions are right for mining
 
+    </p>
+    </div>
+ </div>
+ 
+ <div id="Page2" class="tabcontent">
+   <div class="backgroudimage_page2">
+   <h2>Crypto-jacking</2>
+   <h3>What is Crypto-jacking?</h3>
+   <p class="ex1">
+    &emsp;Crypto-jacking is when an attacker hijacks a computer or multiple computers, usually through a website, to mine bitcoin. 
+    The biggest cost of bitcoin mining is electricity, and cryptojacking allows websites to transfer this cost to the visitor’s CPU.
+     </p> 
+    <h3>What does Crypto-jacking do?</h3>
+    <p class="ex1">
+        &emsp;SomeOrdinaryGamers, a YouTube channel, did an experiment to show how a crypto-jacking virus operates. When he allowed the 
+        Crypto-jacking makes the compromised computer mine for bitcoin. If there are a group of computers, they will communicate with each other send information to each other. The cryptojacking malware will usually activate while the user is idle 
+        </p>
+    <h3>How can I get Crypto-jacked?</h3>
+        <p class="ex1">
+            &emsp;The attacker can create a website that infects visitors with a crypto-jacking bot. Or the attacker can infect an already made site, like a public one that they know will have lots of visitors, and use it to infect . Sometimes the malware will only operate as long as the visitor stay on that site.
+         </p> 
+         <p class="ex1">
+            &emsp;The malware will usually only sap a little bit of power from the victim’s CPU so it is unnoticeable, but if the attacker has hijacked multiple devices then he would easily have enough power to profitably mine bitcoin.
+         </p>
+    <h3>Solution</h3>
+    <p class="ex1">
+        &emsp;Currently, it is hard to detect widespread cryptojacking because of how unnoticeable it
+         can be, but opening up Wireshark and checking can at least help you see if your computer is communicating
+          with foreign devices.  The most helpful thing to do right now is spread awareness and avoid installing sketchy apps. Also crypto-jacking most likely is not done by the site owner themselves but someone who has compromised their the owner’s website.
+          If you find your computer to comprised you can try deleting website extensions since that is where most of malware hides.
+    </p>
+    </div>
+ </div>
+ 
+ <div id="Page3" class="tabcontent">
+    <div class="backgroudimage_page3">
+        <h2>References</h2>
+        <a href="https://www.youtube.com/watch?v=l9jOJk30eQs&list=LL&index=8&t=199s">How Bitcoin Works in 5 Minutes (Technical)</a>
+        <p></p>
+        <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10">But how does bitcoin actually work?</a>
+        <p></p>
+        <a href="https://www.youtube.com/watch?v=GmOzih6I1zs&list=LL&index=13">What is Bitcoin Mining?</a>
+        <p></p>
+        <a href="https://www.imoney.my/articles/should-invest-bitcoin">Should You Invest In Bitcoin Now?</a>
+        <p></p>
+        <a href="https://www.reddit.com/r/BitcoinMining/">r/Bitcoin</a>
+        <p></p>
+        <a href="https://www.youtube.com/watch?v=Ig4GGCQOcWo">Infecting Myself With Crypto Malware! </a>
+        <p></p>
+        <a href="https://www.csoonline.com/article/3253572/what-is-cryptojacking-how-to-prevent-detect-and-recover-from-it.html">What is cryptojacking? How to prevent, detect, and recover from it</a>
+         </div>
+ </div>
+
+ <script>
+ function openInfo(evt, cityName) {
+   var i, tabcontent, tablinks;
+   tabcontent = document.getElementsByClassName("tabcontent");
+   for (i = 0; i < tabcontent.length; i++) {
+     tabcontent[i].style.display = "none";
+   }
+   tablinks = document.getElementsByClassName("tablinks");
+   for (i = 0; i < tablinks.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" active", "");
+   }
+   document.getElementById(cityName).style.display = "block";
+   evt.currentTarget.className += " active";
+ }
+ 
+ // Get the element with id="defaultOpen" and click on it
+ document.getElementById("defaultOpen").click();
+ </script>
 </body>
 </html>
